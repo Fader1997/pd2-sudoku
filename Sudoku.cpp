@@ -3,15 +3,15 @@
 using namespace std;
 
 void Sudoku::giveQuestion(){
-	int problem[9][9] = {{0, 0, 0, 3, 0, 0, 0, 0, 2},
-			             {0, 0, 4, 0, 0, 0, 0, 0, 9},
-						 {0, 0, 0, 0, 5, 1, 0, 4, 0},
+	int problem[9][9] = {{0, 0, 0, 3, 0, 0, 0, 0, 0},
+			             {0, 0, 4, 5, 1, 0, 6, 0, 0},
+						 {0, 0, 7, 0, 0, 0, 0, 2, 0},
 						 {0, 4, 0, 3, 2, 0, 0, 9, 0},
-						 {0, 0, 2, 1, 0, 8, 3, 0, 0},	
-		   				 {0, 5, 0, 0, 4, 6, 0, 1, 0},
-	                     {0, 3, 0, 5, 6, 0, 0, 0, 0},
-						 {5, 0, 0, 0, 0, 0, 4, 0, 0},
-		                 {2, 0, 0, 0, 9, 0, 0, 0, 0}};
+						 {0, 0, 0, 0, 0, 0, 5, 0, 0},	
+		   				 {0, 3, 0, 0, 0, 0, 1, 0, 0},
+	                     {0, 0, 8, 0, 0, 2, 0, 0, 0},
+						 {0, 5, 0, 0, 0, 0, 0, 0, 0},
+		                 {0, 0, 0, 6, 0, 0, 0, 7, 0}};
 	
 	print(problem);
 }
@@ -498,19 +498,3 @@ void Sudoku::print(int prtanyArr[9][9])
 		cout << endl;
 	}
 }
-
-/*int main()
-{
-
-	Sudoku sudoku;
-	sudoku.giveQuestion();
-	sudoku.readIn();
-	sudoku.changeNum(1, 2);
-	sudoku.changeRow(1, 2);
-	sudoku.changeCol(1, 2);
-	sudoku.rotate(1);
-	sudoku.flip(596);
-	sudoku.transform();
-	sudoku.solve();
-	return 0;
-}*/
